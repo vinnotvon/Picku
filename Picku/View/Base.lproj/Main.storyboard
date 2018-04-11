@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+            <string>HelveticaNeue-LightItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Picku" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Super View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RO8-3A-gf0" userLabel="Top Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Up Line" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kz-to-cPt">
+                                        <rect key="frame" x="5" y="0.0" width="365" height="334"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1Kz-to-cPt" firstAttribute="leading" secondItem="RO8-3A-gf0" secondAttribute="leading" constant="5" id="4FG-U9-O5f"/>
+                                    <constraint firstItem="1Kz-to-cPt" firstAttribute="top" secondItem="RO8-3A-gf0" secondAttribute="top" id="9hG-Vk-55g"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Kz-to-cPt" secondAttribute="trailing" constant="5" id="Gvh-rA-DIb"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Kz-to-cPt" secondAttribute="bottom" id="axO-4t-g0l"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJn-Pt-mIe" userLabel="Bottom Container">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ct-Fh-9lg">
+                                        <rect key="frame" x="139" y="0.0" width="97" height="334"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                        <state key="normal" title="Nexxxt!">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextRandomPickUpLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrm-Yc-5xA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0ct-Fh-9lg" firstAttribute="centerX" secondItem="OJn-Pt-mIe" secondAttribute="centerX" id="JG4-DC-G7Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ct-Fh-9lg" secondAttribute="bottom" id="TBO-V1-jdI"/>
+                                    <constraint firstItem="0ct-Fh-9lg" firstAttribute="top" secondItem="OJn-Pt-mIe" secondAttribute="top" id="hkh-dZ-Q6o"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RO8-3A-gf0" secondAttribute="trailing" id="BEa-P3-h7N"/>
+                            <constraint firstAttribute="trailing" secondItem="OJn-Pt-mIe" secondAttribute="trailing" id="FKX-JC-1vq"/>
+                            <constraint firstItem="OJn-Pt-mIe" firstAttribute="height" secondItem="RO8-3A-gf0" secondAttribute="height" id="Rev-EU-KNu"/>
+                            <constraint firstItem="OJn-Pt-mIe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vvt-qd-rnS"/>
+                            <constraint firstItem="OJn-Pt-mIe" firstAttribute="top" secondItem="RO8-3A-gf0" secondAttribute="bottom" id="ZDW-W7-MpK"/>
+                            <constraint firstItem="OJn-Pt-mIe" firstAttribute="top" secondItem="RO8-3A-gf0" secondAttribute="bottom" id="aF2-eN-5mY"/>
+                            <constraint firstItem="RO8-3A-gf0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gFM-84-mKB"/>
+                            <constraint firstItem="RO8-3A-gf0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kNH-QN-YGb"/>
+                            <constraint firstAttribute="bottom" secondItem="OJn-Pt-mIe" secondAttribute="bottom" id="zM8-UZ-u2u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="randomPickUpLineText" destination="1Kz-to-cPt" id="Rhz-aH-WXm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
